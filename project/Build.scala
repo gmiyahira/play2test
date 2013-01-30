@@ -10,7 +10,8 @@ object ApplicationBuild extends Build {
 	
     val appDependencies = Seq(
 	  "org.webjars" % "webjars-play" % "2.0",
-      "org.webjars" % "bootstrap" % "2.2.2-1"
+      "org.webjars" % "bootstrap" % "2.2.2-1",
+	  "postgresql" % "postgresql" % "9.1-901.jdbc4"
     )
 
     val main = PlayProject(appName, appVersion, appDependencies, mainLang = JAVA).settings(
